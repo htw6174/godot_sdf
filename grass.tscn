@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://126xjs0hy2mg"]
+
+[ext_resource type="Material" uid="uid://c1gmwfp2agfd1" path="res://grass.tres" id="1_r8sao"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_720j8"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_1c3hk"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_0njq2"]
+size = Vector3(20, 3, 20)
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Floor" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.249608, 0.331948, 0.184864)
+cast_shadow = 0
+mesh = SubResource("PlaneMesh_720j8")
+
+[node name="box" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.591402, 0.294129, -0.690378)
+cast_shadow = 0
+mesh = SubResource("BoxMesh_1c3hk")
+
+[node name="grassbox" type="MeshInstance3D" parent="."]
+material_override = ExtResource("1_r8sao")
+gi_mode = 0
+mesh = SubResource("BoxMesh_0njq2")

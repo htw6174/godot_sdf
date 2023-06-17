@@ -1,0 +1,11 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://bh163sllvo6u4"]
+
+[ext_resource type="Shader" path="res://ballbox.gdshader" id="1_x6ccr"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_x6ccr")
+shader_parameter/color = Color(0.690196, 0.313726, 0.231373, 1)
+shader_parameter/steps = 256
+shader_parameter/set_depth = false
+shader_parameter/box = Vector3(0.5, 0.5, 1)
