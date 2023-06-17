@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://c6ybumjpmax15"]
+
+[ext_resource type="Material" uid="uid://bh163sllvo6u4" path="res://ballbox_mat.tres" id="1_jw0c7"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_ky4fj"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_s3122"]
+
+[node name="croquet" type="Node3D"]
+
+[node name="portal" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.834246, -0.308437, 0.457056, 0.136278, 0.918532, 0.371116, -0.534287, -0.247315, 0.808315, -0.199188, -0.0443048, -0.150332)
+mesh = SubResource("QuadMesh_ky4fj")
+surface_material_override/0 = ExtResource("1_jw0c7")
+
+[node name="cube" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -0.764499, -0.276175, -0.496273)
+mesh = SubResource("BoxMesh_s3122")

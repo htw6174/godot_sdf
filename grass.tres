@@ -1,0 +1,10 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://c1gmwfp2agfd1"]
+
+[ext_resource type="Shader" path="res://grass.gdshader" id="1_von6d"]
+
+[resource]
+render_priority = 1
+shader = ExtResource("1_von6d")
+shader_parameter/color = Color(0.235294, 0.368627, 0.0196078, 1)
+shader_parameter/period = 2.0
+shader_parameter/extents = Vector3(40, 0, 40)
